@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Create User</title>
-    </head>
-    <body>
-        <form id="user-create-form" method="post">
-            
-            <input type="text" id="fullName" placeholder="Full Name"><br>
-            <input type="text" id="username" placeholder="Username"><br>
-            <input type="text" id="email" placeholder="Email"><br>
-            <input type="text" id="birthday" placeholder="Birthday"><br>
-    
-            <button type="submit">Create User</button>
-        </form>
-        <script src="index.js"></script>
-    </body>
-    </html>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+
+<body>
+    <form id="user-create-form" action="./api/user" method="post">
+
+        Email: <input type="text" id="email">
+        <br> User name: <input type="text" id="username">
+        <br> Full Name: <input type="text" id="fullname">
+        <br> Date of Birth: <input type="text" id="dob">
+        <br>
+        <div id="error"></div>
+
+
+
+
+        <button id="submit">Create User</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
