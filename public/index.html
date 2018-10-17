@@ -10,20 +10,75 @@
 
 <body>
     <form id="user-create-form" action="./api/user" method="post">
-
+        <fieldset>
         Email: <input type="text" id="email">
-        <br> User name: <input type="text" id="username">
+        <br> User name: <input type="text" id="username" autofocus>
         <br> Full Name: <input type="text" id="fullname">
         <br> Date of Birth: <input type="text" id="dob">
+        <br> mobile phone number: <input type="number" id="mobile">
+        <br> Social Media Page: <input type="url" id="url">
+        </fieldset>
         <br>
-        <div id="error"></div>
-
-
-
-
+        <br>
+        <br>
+        <fieldset>
+            <Legend>Prefered Method of Communication</Legend>
+            <ul>
+                <li>
+                    <input type="radio" id="telephone"> Telephone
+                </label>
+                </li>
+                <li>
+                    <input type="radio" id="emailTwo"> Email
+                </label>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What is your device of choice?</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" id="ios"> IOS (Ipad, Iphone)
+                </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Android"> Android
+                </li>
+                <li>
+                    <input type="checkbox" id="Macbook"> Macbook
+                </li>
+                <li>
+                    <input type="checkbox" id="Windows"> Windows
+                </li>
+                <li>
+                    <input type="checkbox" id="linux"> linux
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+                <legend>User Type</legend>
+                <select name="User Type" autofocus>
+                <option value="Administrator" id="admin">Administrator</option>
+                <option value="Moderator" id="mod">Moderator</option>
+                <option value="User" id="user">User</option>
+                
+              </select>
+            </fieldset>
+    
+            <br>
+            <fieldset>
+                <legend>What are your available times?</legend>
+                <input type="datetime-local" name="datetime" id="datetime">
+            </fieldset>
+            <br>
+            <br>
+    
         <button id="submit">Create User</button>
     </form>
     <script src="index.js"></script>
 </body>
 
 </html>
+<div id="error"></div>
