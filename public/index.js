@@ -29,13 +29,16 @@ function action(event) {
 
 function postUser(userInfo) {
     // console.log('again user', userInfo)
-    fetch(`./api/user`, {
-            method: 'POST',
+    fetch('./api/user', {
+            method: "POST",
             body: userInfo,
             headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then(res => res.json())
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            mode: 'no-cors'
+        })
+        .then((res) => res.json())
         .then(data => {
             console.log('Reached Server, Server Message:', data)
             if (data.message === "Error, username Exists") {
