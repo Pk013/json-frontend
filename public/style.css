@@ -1,5 +1,8 @@
 body {
     width: 75%;
     margin: auto;
-    background-color: burlywood;
+    background-color: red;
+}
+fieldset{
+    background-color: blue;
 }

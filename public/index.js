@@ -15,12 +15,12 @@ function action(event) {
     const mobileNumber = document.getElementById("mobile").value
     const socialMedia = document.getElementById("url").value
     const telephone = document.getElementById("telephone").checked
-    const email2 = document.getElementById("email2").checked
+    const email2 = document.getElementById("emailTwo").checked
     const mail = document.getElementById("mail").checked
     const ios = document.getElementById("ios").checked
-    const android = document.getElementById("android").checked
-    const mac = document.getElementById("mac").checked
-    const windows = document.getElementById("windows").checked
+    const android = document.getElementById("Android").checked
+    const mac = document.getElementById("Macbook").checked
+    const windows = document.getElementById("Windows").checked
     const linux = document.getElementById("linux").checked
     const admin = document.getElementById("admin").value
     const mod = document.getElementById("mod").value
