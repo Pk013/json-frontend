@@ -15,8 +15,7 @@ function action(event) {
     const mobileNumber = document.getElementById("mobile").value
     const socialMedia = document.getElementById("url").value
     const telephone = document.getElementById("telephone").checked
-    const email2 = document.getElementById("emailTwo").checked
-    const mail = document.getElementById("mail").checked
+    const emailTwo = document.getElementById("emailTwo").checked
     const ios = document.getElementById("ios").checked
     const android = document.getElementById("Android").checked
     const mac = document.getElementById("Macbook").checked
@@ -34,8 +33,7 @@ function action(event) {
     userObject.mobileNumber = mobileNumber
     userObject.socialMedia = socialMedia
     userObject.telephonePrefered = telephone
-    userObject.emailPrefered = email2
-    userObject.mailPrefered = mail
+    userObject.emailPrefered = emailTwo
     userObject.iosDevice = ios
     userObject.androidDevice = android
     userObject.macDevice = mac
